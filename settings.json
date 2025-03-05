@@ -1,120 +1,120 @@
 {
-  "soft_wrap": "bounded",
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+    "soft_wrap": "editor_width",
+    "assistant": {
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-3-5-sonnet-latest"
+        },
+        "version": "2"
     },
-    "version": "2"
-  },
-  "telemetry": {
-    "diagnostics": true,
-    "metrics": true
-  },
-  "show_copilot_suggestions": true,
-  "features": {
-    "copilot": true
-  },
-  "autosave": "on_focus_change",
-  "autosave_delay": 1500,
-  "autosave_on_focus_change": true,
-  "autosave_on_window_change": true,
-  "autosave_on_build": true,
-  "autosave_on_build_delay": 1500,
-  "format_on_save": "on",
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "bracketSpacing": true,
-    "jsxBracketSameLine": false,
-    "arrowParens": "avoid",
-    "proseWrap": "preserve",
-    "endOfLine": "lf"
-  },
-  "linter": "eslint",
-  "bracket_pairing": "always",
-  "eslint": {
-    "enabled": true,
-    "autoFixOnSave": true,
-    "autoFixOnFormat": true,
-    "autoFixOnFormatDelay": 1500
-  },
-  "languages": {
-    "C": {
-      "format_on_save": "language_server",
-      "tab_size": 2
+    "telemetry": {
+        "diagnostics": true,
+        "metrics": true
     },
-    "JSON": {
-      "format_on_save": "language_server",
-      "tab_size": 4
+    "show_copilot_suggestions": true,
+    "features": {
+        "copilot": true
     },
-    "JavaScript": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+    "autosave": "on_focus_change",
+    "autosave_delay": 1500,
+    "autosave_on_focus_change": true,
+    "autosave_on_window_change": true,
+    "autosave_on_build": true,
+    "autosave_on_build_delay": 1500,
+    "format_on_save": "on",
+    "prettier": {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "arrowParens": "avoid",
+        "proseWrap": "preserve",
+        "endOfLine": "lf"
     },
-    "TypeScript": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-      }
+    "linter": "eslint",
+    "bracket_pairing": "always",
+    "eslint": {
+        "enabled": true,
+        "autoFixOnSave": true,
+        "autoFixOnFormat": true,
+        "autoFixOnFormatDelay": 1500
     },
-    "Python": {
-      "format_on_save": "language_server",
-      "tab_size": 4
+    "languages": {
+        "C": {
+            "format_on_save": "language_server",
+            "tab_size": 2
+        },
+        "JSON": {
+            "format_on_save": "language_server",
+            "tab_size": 4
+        },
+        "JavaScript": {
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            }
+        },
+        "TypeScript": {
+            "code_actions_on_format": {
+                "source.organizeImports": true,
+                "source.fixAll.eslint": true
+            }
+        },
+        "Python": {
+            "format_on_save": "language_server",
+            "tab_size": 4
+        },
+        "Markdown": {
+            "format_on_save": "language_server",
+            "tab_size": 2
+        },
+        "HTML": {
+            "format_on_save": "language_server",
+            "tab_size": 2
+        },
+        "CSS": {
+            "format_on_save": "language_server",
+            "tab_size": 2
+        },
+        "go": {
+            "format_on_save": "language_server",
+            "tab_size": 2
+        },
     },
-    "Markdown": {
-      "format_on_save": "language_server",
-      "tab_size": 2
-    },
-    "HTML": {
-      "format_on_save": "language_server",
-      "tab_size": 2
-    },
-    "CSS": {
-      "format_on_save": "language_server",
-      "tab_size": 2
-    },
-    "go": {
-      "format_on_save": "language_server",
-      "tab_size": 2
-    },
-  },
-  "ssh_connections": [
-    {
-      "host": "io",
-      "projects": []
-    },
-    {
-      "host": "io",
-      "projects": [
+    "ssh_connections": [
         {
-          "paths": [
-            "~/src/pump"
-          ]
+            "host": "io",
+            "projects": []
+        },
+        {
+            "host": "io",
+            "projects": [
+                {
+                    "paths": [
+                        "~/src/pump"
+                    ]
+                }
+            ]
+        },
+        {
+            "host": "io",
+            "projects": []
+        },
+        {
+            "host": "rpi1",
+            "projects": []
         }
-      ]
+    ],
+    "base_keymap": "VSCode",
+    "ui_font_size": 14,
+    "buffer_font_size": 14.0,
+    "theme": {
+        "mode": "system",
+        "light": "Ayu Dark",
+        "dark": "One Dark"
     },
-    {
-      "host": "io",
-      "projects": []
-    },
-    {
-      "host": "rpi1",
-      "projects": []
-    }
-  ],
-  "base_keymap": "VSCode",
-  "ui_font_size": 14,
-  "buffer_font_size": 14.0,
-  "theme": {
-    "mode": "system",
-    "light": "Ayu Dark",
-    "dark": "One Dark"
-  },
-  "always_treat_brackets_as_autoclosed": true
+    "always_treat_brackets_as_autoclosed": true
 }
